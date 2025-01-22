@@ -12,7 +12,7 @@ context += "Column names: " + ", ".join(data.columns) + "\n\n"
 context += "**Sample Data:**\n" 
 context += data.to_markdown(index=False)
 
-api_key = 'AIzaSyC_AQk9UXBDBGOQS5QWSGb8Z3UDpf2p6oI' 
+api_key = 'api_key' 
 genai.configure(api_key=api_key)
 model = genai.GenerativeModel(model_name="gemini-1.5-flash")
 
